@@ -1769,15 +1769,89 @@ body::after{
 }
 
 
-/* MOBILE RESPONSIVE */
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
 
 @media(max-width:900px){
+
+    /* NAVBAR */
+
+    .navbar{
+
+        padding:18px 20px;
+    }
+
+    .nav-links{
+
+        gap:18px;
+
+        font-size:14px;
+    }
+
+    /* HERO SECTION */
+
+    .hero{
+
+        padding:120px 20px 80px;
+    }
+
+    .hero-container{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:50px;
+    }
+
+    .hero-content h1{
+
+        font-size:52px;
+
+        line-height:1.1;
+    }
+
+    .hero-content p{
+
+        font-size:18px;
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+    }
+
+    /* HERO IMAGE */
+
+    .hero-image{
+
+        margin:auto;
+    }
+
+    .hero-image img{
+
+        width:100%;
+
+        max-width:330px;
+
+        height:auto;
+    }
+
+    /* ABOUT SECTION */
+
+    .about{
+
+        padding:100px 20px;
+    }
 
     .about-container{
 
         grid-template-columns:1fr;
 
-        gap:60px;
+        gap:70px;
     }
 
     .about-content{
@@ -1787,40 +1861,136 @@ body::after{
 
     .about-content h2{
 
-        font-size:50px;
+        font-size:55px;
+
+        line-height:1.1;
     }
+
+    /* ABOUT TAGS */
+
+    .about-tags{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+    }
+
+    /* FOCUS ITEMS */
+
+    .focus-items{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+    }
+
+    /* ABOUT IMAGE */
 
     .about-image{
 
+        width:100%;
+
+        margin:auto;
+
         justify-content:center;
+
+        margin-top:0;
     }
 
     .about-image img{
 
+        width:100%;
+
         max-width:340px;
 
-        height:360px;
+        height:380px;
+
+        object-fit:cover;
     }
+
+    /* IMAGE GLOW */
 
     .image-border{
 
-        width:380px;
+        width:360px;
 
-        height:390px;
+        height:420px;
     }
+
+    /* BADGE */
 
     .availability{
 
-        bottom:-28px;
+        min-width:220px;
 
-        padding:14px 24px;
+        padding:20px 20px;
+
+        font-size:18px;
+
+        bottom:-100px;
+
+        margin-left: -180px;
     }
 
-    .about-tags,
-    .focus-items,
+    /* CONNECTOR LINES */
+
+    .left-line{
+
+        left:85px;
+    }
+
+    .right-line{
+
+        right:85px;
+    }
+
+    /* MINI STATS */
+
     .mini-stats{
 
         justify-content:center;
+
+        flex-wrap:wrap;
+    }
+
+    .mini-card{
+
+        width:100%;
+    }
+
+    /* SKILLS */
+
+    .skills-grid{
+
+        grid-template-columns:1fr 1fr;
+    }
+
+    /* PROJECTS */
+
+    .projects-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    /* EXPERIENCE */
+
+    .timeline{
+
+        padding-left:0;
+    }
+
+    .timeline-item{
+
+        width:100%;
+    }
+
+    /* CONTACT */
+
+    .contact-container{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
     }
 
 }
