@@ -253,3 +253,72 @@ function showToast(message,type){
     },3000);
 
 }
+
+
+/* ABOUT TYPING EFFECT */
+
+const aboutTexts = [
+
+    "Backend Developer",
+    "Java Full Stack Developer",
+    "AI Project Developer",
+    "Problem Solver"
+
+];
+
+let aboutIndex = 0;
+let charIndex1 = 0;
+
+const aboutTyping =
+document.querySelector(".about-typing");
+
+function typeAbout(){
+
+    if(charIndex1 < aboutTexts[aboutIndex].length){
+
+        aboutTyping.innerHTML +=
+        aboutTexts[aboutIndex].charAt(charIndex1);
+
+        charIndex1++;
+
+        setTimeout(typeAbout,100);
+
+    }
+    else{
+
+        setTimeout(eraseAbout,1500);
+
+    }
+
+}
+
+function eraseAbout(){
+
+    if(charIndex1 > 0){
+
+        aboutTyping.innerHTML =
+        aboutTexts[aboutIndex]
+        .substring(0,charIndex1-1);
+
+        charIndex1--;
+
+        setTimeout(eraseAbout,50);
+
+    }
+    else{
+
+        aboutIndex++;
+
+        if(aboutIndex >= aboutTexts.length){
+
+            aboutIndex = 0;
+
+        }
+
+        setTimeout(typeAbout,300);
+
+    }
+
+}
+
+typeAbout();
