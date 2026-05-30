@@ -1808,57 +1808,95 @@ section{
 
     /* HERO SECTION */
 
-    .hero{
+    /* HERO MOBILE FIX */
 
-        padding:120px 20px 80px;
-    }
+.hero{
 
-    .hero-container{
+    padding:120px 20px 70px;
+
+    min-height:auto;
+}
+
+.hero-container{
+
+    display:flex;
+
+    flex-direction:column-reverse;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    gap:40px;
+}
+
+.hero-content h1{
+
+    font-size:42px;
+
+    line-height:1.1;
+
+    margin-bottom:20px;
+
+    word-break:break-word;
+}
+
+.hero-content h2{
+
+    font-size:28px;
+
+    line-height:1.2;
+}
+
+   .hero-content p{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    padding:0 5px;
+}
+
+   .hero-buttons{
 
     display:flex;
 
     flex-direction:column;
 
+    width:100%;
+
     align-items:center;
 
+    gap:18px;
+}
+
+.hero-buttons a{
+
+    width:100%;
+
+    max-width:260px;
+
     text-align:center;
-
-    gap:50px;
 }
-
-   .hero-content h1{
-
-    font-size:42px;
-
-    line-height:1.15;
-
-    word-break:break-word;
-}
-
-    .hero-content p{
-
-        font-size:18px;
-    }
-
-    .hero-buttons{
-
-        justify-content:center;
-
-        flex-wrap:wrap;
-    }
 
     /* HERO IMAGE */
 
     .hero-image{
 
-        margin:auto;
-    }
+    width:100%;
 
-    .hero-image img{
+    display:flex;
+
+    justify-content:center;
+}
+
+.hero-image img{
 
     width:100%;
 
-    max-width:280px;
+    max-width:260px;
 
     height:auto;
 
